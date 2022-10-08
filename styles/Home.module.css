@@ -1,5 +1,5 @@
 .connect {
-  position: fixed;
+  position: flex;
   top: 5%;
   left: 5%;
 }
@@ -34,7 +34,7 @@
 }
 
 .container {
-  margin-top: 96px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +45,7 @@
 }
 
 .page {
-  width: inherit;
+  width: static;
   border-radius: 20px;
   border: 1px solid var(--tw-color1);
   padding: 16px;
@@ -53,7 +53,7 @@
 
 .pageContainer {
   max-width: 600px;
-  width: 90vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,7 +81,7 @@
 
 .header {
   background-color: #262936;
-  position: fixed;
+  position: flex;
   top: 0;
   left: 0;
   width: 100vw;
@@ -117,6 +117,14 @@
   padding: 5px;
   color: #fff;
   font-weight: 600;
+  background: #e5e5ea;
+  background-image: linear-gradient(to left, #cc25b3 0%, #418dff 101.52%);
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  border-radius: 9999px;
+  border-style: none;
+  margin: 10px;
 }
 
 .mainButton {
