@@ -12,7 +12,7 @@ export default function ThirdwebGuideFooter() {
       >
         <img
           src={"/logo.png"}
-          alt="github url"
+          alt="logo url"
           width={50}
           height={50}
           role="button"
