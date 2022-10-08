@@ -17,7 +17,7 @@ const nftDropContractAddress = "0xB8558E331a6f3b2093B1eb090B7a9602381C156c";
 const tokenContractAddress = "0xb2A88b1CC10691557328F7Cd64280Cf3F667469C";
 const stakingContractAddress = "0xE06924bab26485EeB5E6c8c0Ef61f539e6104980";
 
-const Stake: NextPage = () => {
+const Home: NextPage = () => {
   // Wallet Connection Hooks
   const address = useAddress();
   const connectWithMetamask = useMetamask();
@@ -108,7 +108,7 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Stake Your NFTs</h1>
+      <h1 className={styles.h1}>Stake Your Goblintrum</h1>
 
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
@@ -182,7 +182,7 @@ const Stake: NextPage = () => {
                 <h3>{nft.metadata.name}</h3>
                 <button
                   className={`${styles.mainButton} ${styles.spacerBottom}`}
-                  onClick={() => stakeNft(nft.metadata.id)}
+                  onClick={() => stakeNft}
                 >
                   Stake
                 </button>
@@ -195,4 +195,4 @@ const Stake: NextPage = () => {
   );
 };
 
-export default Stake;
+export default Home;
