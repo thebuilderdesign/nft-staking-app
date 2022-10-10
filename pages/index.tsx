@@ -182,7 +182,7 @@ const Home: NextPage = () => {
                 <h3>{nft.metadata.name}</h3>
                 <button
                   className={`${styles.mainButton} ${styles.spacerBottom}`}
-                  onClick={() => stakeNft}
+                  onClick={() => stakeNft(nft.metadata.id)}
                 >
                   Stake
                 </button>
